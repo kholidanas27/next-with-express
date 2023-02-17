@@ -1,0 +1,1 @@
+// change to 'commonjs' in package.json if run migrations
