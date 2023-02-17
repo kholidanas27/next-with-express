@@ -9,7 +9,7 @@ function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Next.js 10 - CRUD Example with React Hook Form</title>
+        <title>Next.js 13 - CRUD Example with React Hook Form</title>
       </Head>
 
       <div className="app-container bg-light">
