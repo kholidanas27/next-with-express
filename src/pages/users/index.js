@@ -37,7 +37,6 @@ function Index() {
           <tr>
             <th style={{ width: "30%" }}>Name</th>
             <th style={{ width: "30%" }}>Email</th>
-            <th style={{ width: "30%" }}>Role</th>
             <th style={{ width: "10%" }}></th>
           </tr>
         </thead>
@@ -46,10 +45,9 @@ function Index() {
             users.map((user) => (
               <tr key={user.id}>
                 <td>
-                  {user.title} {user.firstName} {user.lastName}
+                  {user.firstName} {user.lastName}
                 </td>
                 <td>{user.email}</td>
-                <td>{user.role}</td>
                 <td style={{ whiteSpace: "nowrap" }}>
                   <Link
                     href={`/users/edit/${user.id}`}

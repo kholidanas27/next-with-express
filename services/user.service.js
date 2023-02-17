@@ -12,12 +12,11 @@ export const userService = {
 const baseUrl = `${apiUrl}/users`;
 
 function getAll() {
-  console.log('mybaseUrl', baseUrl);
   return fetchWrapper.get(baseUrl);
 }
 
 function getById(id) {
-  return fetchWrapper.get(`http://localhost:3000/api/users/${id}`);
+  return fetchWrapper.get(`${baseUrl}/${id}`);
 }
 
 function create(params) {

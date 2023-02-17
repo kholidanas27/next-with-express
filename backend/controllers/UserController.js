@@ -11,12 +11,12 @@ export const getAllUsers = async (req, res) => {
 
 export const getUserById = async (req, res) => {
   try {
-    const User = await User.findAll({
+    const UserData = await User.findAll({
       where: {
         id: req.params.id,
       },
     });
-    res.json(User[0]);
+    res.json(UserData[0]);
   } catch (error) {
     res.json({ message: error.message });
   }
